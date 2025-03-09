@@ -12,7 +12,7 @@ pipeline {
      environment {
         AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
-        AWS_DEFAULT_REGION    = "us-west-1"
+        AWS_DEFAULT_REGION    = "us-west-2"
         SSH_KEY = "/home/ubuntu/.ssh/my_keypairnew.pem"  // Replace with your private key
         ANSIBLE_PLAYBOOK = "webserver.yml"
         GIT_REPO = "https://github.com/sharanya123-ty/Ansible_Playbook.git"

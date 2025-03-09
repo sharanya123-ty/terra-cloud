@@ -15,7 +15,7 @@ pipeline {
         AWS_DEFAULT_REGION    = "us-west-1"
         SSH_KEY = "/home/ubuntu/.ssh/aksmr-tf.pem"  // Replace with your private key
         ANSIBLE_PLAYBOOK = "webserver.yml"
-        GIT_REPO = "https://github.com/hhgsharish/Ansible_Playbook_Harish.git"
+        GIT_REPO = "https://github.com/AkshathaMR/Ansible_Playbook.git"
     }
 
 

@@ -2,6 +2,6 @@ terraform {
   backend s3{
     bucket = "terra-cloud-aksmr"
     key = "remote.tfstate"
-    region = "ap-south-1"
+    region = "us-west-1"
   }
 }

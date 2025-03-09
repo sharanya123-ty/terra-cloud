@@ -29,7 +29,7 @@ resource "aws_security_group" "webserver_access" {
 
 resource "aws_instance" "ourfirst" {
   ami           = "ami-07d2649d67dbe8900"
-  availability_zone = "us-west-1"
+  availability_zone = "us-west-1a"
   instance_type = "t2.micro"
   security_groups = ["${aws_security_group.webserver_access.name}"]
   key_name = "zoomkey"

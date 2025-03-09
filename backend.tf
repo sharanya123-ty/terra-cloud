@@ -1,7 +1,7 @@
 terraform {
   backend s3{
-    bucket = "exotica-buck-ec2inst"
+    bucket = "oregano-west2-buckinst"
     key = "remote.tfstate"
-    region = "us-east-1"
+    region = "us-west-2"
   }
 }

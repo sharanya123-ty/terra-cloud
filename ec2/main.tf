@@ -32,9 +32,16 @@ resource "aws_instance" "ourfirst" {
   availability_zone = "us-west-1a"
   instance_type = "t2.micro"
   user_data = filebase64("install_apache.sh")
+  vpc_security_group_ids = [aws_security_group.webserver_access.id]  # Correct reference
+  key_name               = "aksmr-tf"
+  
   tags = {
-    Name  = "ec2-test"
-    Location = "N.California"
+    Name      = "ec2-test"
+    Location  = "N.california"
   }
+}
 
+output "ec2_public_ip" {
+  value = aws_instance.ourfirst.public_ip
+  description = "Public IP of the EC2 instance"
 }
